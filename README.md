@@ -38,7 +38,7 @@ sudo apt-get install python3
 The server takes an optional argument for the device, and if not supplied it will default to `/dev/ttyUSB0`
 
 ```
-python3 naplps-server.py /dev/tryACM0
+python3 naplps-server.py /dev/ttyACM0
 ```
 
 Basic logging to the console will let you know how the server is operating. The server can be terminated with `ctrl-c` as needed.
