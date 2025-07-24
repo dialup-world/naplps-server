@@ -50,3 +50,5 @@ Images added to the `images` directory will be randomly sent to the terminal. Cu
 Only images ending in the `.nap` (case insensitive) extension will be displayed. Note thet not all NAPLPS images seem to be created equally and some will not render properly.
 
 The images in this directory currently are sample images that should work out-of-the-box.
+
+Attribution for the images can be found in the [images/README.md](images/README.md).
