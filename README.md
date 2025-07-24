@@ -18,13 +18,13 @@ Before running the server you will need to know the device that corresponds with
 To avoid using `sudo` your user needs to be added to the `dialout` group:
 
 ```
-sudo usernod -aG dialout yourUsername
+sudo usernod -aG dialout $USER
 ```
 
 After this you will need to log out and back in or otherwise find a away to refresh your groups:
 
 ```
-exec su - yourUsername
+exec su - $USER
 ```
 
 The only software dependency is `python3`:
