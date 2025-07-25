@@ -43,6 +43,29 @@ python3 naplps-server.py /dev/ttyACM0
 
 Basic logging to the console will let you know how the server is operating. The server can be terminated with `ctrl-c` as needed.
 
+## Terminal Settings
+
+How to configure your terminal to connect to the server.
+
+### AT&T Sceptre
+
+At the landing screen (Data Base Access) press `MODE` for the Mode Select screen and then `2` for Directory. Then press a number 1-5 to create an entry:
+
+| Setting    | Value |
+| -------- | ------- |
+| Name             | <any>      |
+| Contents         | `SHIFT+PHONE`<Number>`SHIFT+DATA` |
+| Setup Parameters | yes        |
+| Parity           | None       |
+| Duplex           | Full       |
+| All Caps         | Off        |
+| Protocol         | NAPLPS 8   |
+| Sync/Async       | Async-1200 |
+| Flow Ctrl        | On/On      |
+| EOL Char         | CR         |
+
+Then press `RETURN` to save. Press `MODE` to return to the Mode Select screen and `1` to go back to the Data Base Access screen. From here you can press the digit of the entry you made to start the call.
+
 ## Adding/Removing Images
 
 Images added to the `images` directory will be randomly sent to the terminal. Current logic does not allow the same image to be sent twice in a row, so you should get a different image eith every push. Images added to the directory will not enter the rotation until after the server is restarted. It is not recommended to remove images from the directory while the server is running.
