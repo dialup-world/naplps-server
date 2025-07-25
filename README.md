@@ -66,6 +66,44 @@ At the landing screen (Data Base Access) press `MODE` for the Mode Select screen
 
 Then press `RETURN` to save. Press `MODE` to return to the Mode Select screen and `1` to go back to the Data Base Access screen. From here you can press the digit of the entry you made to start the call.
 
+## Running as a Service
+
+The server can be impleneted as a `systemd` service.
+
+Clone the project into `/opt` and copy `conf/naplps-server@.service` into `/etc/systemd/system/`.
+
+```
+cd /opt
+git clone https://github.com/dialup-world/naplps-server.git
+sudo cp naplps-server/conf/naplps-server@.service /etc/systemd/system/naplps-server@.service
+```
+
+Ensure our log file exists (might not be needed):
+
+```
+sudo touch /var/log/naplps-server.log
+```
+
+Reload `systemd` units:
+
+```
+sudo systemctl daemon-reload
+```
+
+Start and enable the service while specifying your device. I am using `ttyACM0`:
+
+```
+sudo systemctl start naplps-servier@ttyACM0.service
+sudo systemctl enable naplps-server@ttyACM0.service
+```
+
+Check status and logs:
+
+```
+sudo systemctl status naplps-server@ttyACM0.service
+sudo tail -f /var/log/naplps-server.log
+```
+
 ## Adding/Removing Images
 
 Images added to the `images` directory will be randomly sent to the terminal. Current logic does not allow the same image to be sent twice in a row, so you should get a different image eith every push. Images added to the directory will not enter the rotation until after the server is restarted. It is not recommended to remove images from the directory while the server is running.
