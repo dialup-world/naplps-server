@@ -1,0 +1,13 @@
+[Unit]
+Description=NAPLPS Server on %i
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/env python3 /opt/naplps-server/naplps-server.py /dev/%i
+Restart=on-failure
+WorkingDirectory=/opt/naplps-server
+StandardOutput=append:/var/log/naplps-server.log
+StandardError=append:/var/log/naplps-server.log
+
+[Install]
+WantedBy=multi-user.target
