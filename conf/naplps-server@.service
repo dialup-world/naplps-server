@@ -8,6 +8,8 @@ Restart=on-failure
 WorkingDirectory=/opt/naplps-server
 StandardOutput=append:/var/log/naplps-server.log
 StandardError=append:/var/log/naplps-server.log
+KillMode=control-group
+TimeoutStopSec=5
 
 [Install]
 WantedBy=multi-user.target
