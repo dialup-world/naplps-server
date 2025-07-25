@@ -115,7 +115,7 @@ We currently have a live demo up you can connect to with your videotex terminal 
 * PSTN (US only for now) - `267-921-1337`
 * PhreakNet - `215-0502`
 * Direct SIP
-  - Server: `sip.dialup.world:`
+  - Server: `sip.dialup.world`
   - Port: `16556`
   - User: `naplps`
   - Password: `naplps`
