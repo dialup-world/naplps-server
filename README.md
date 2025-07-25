@@ -2,7 +2,9 @@
 
 A basic NAPLPS server for interacting with compatible hardware terminals.
 
-I built this in about 6 hours because I bought an AT&T Sceptre and wanted to get it working. Proper writeup forthcoming!
+After connection, this server will send NAPLPS graphics to the terminal in a loop with a 10 second delay between each push.
+
+This is a quick project I built in about 6 hours because I bought an AT&T Sceptre and wanted to get it working. Proper writeup forthcoming!
 
 ## Requirements
 
