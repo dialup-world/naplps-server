@@ -113,7 +113,7 @@ sudo tail -f /var/log/naplps-server.log
 We currently have a live demo up you can connect to with your videotex terminal via a variety of methods. It is *flakey* and can break easily. More work will be done to see about how (if) we can improve this.
 
 * PSTN (US only for now) - `267-921-1337`
-* PhreakNet - `215-0502`
+* PhreakNet - `263-0502`
 * Direct SIP
   - Server: `sip.dialup.world`
   - Port: `16556`
