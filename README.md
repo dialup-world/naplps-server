@@ -1,5 +1,8 @@
 # naplps-server
+
 A basic NAPLPS server for interacting with compatible hardware terminals.
+
+I built this in about 6 hours because I bought an AT&T Sceptre and wanted to get it working. Proper writeup forthcoming!
 
 ## Requirements
 
@@ -27,10 +30,11 @@ After this you will need to log out and back in or otherwise find a away to refr
 exec su - $USER
 ```
 
-The only software dependency is `python3`:
+The only software dependency is `python3`, though we do need the `pyserial` package:
 
 ```
 sudo apt-get install python3
+sudo pip3 install pyserial
 ```
 
 ## Running the Server
@@ -93,7 +97,7 @@ sudo systemctl daemon-reload
 Start and enable the service while specifying your device. I am using `ttyACM0`:
 
 ```
-sudo systemctl start naplps-servier@ttyACM0.service
+sudo systemctl start naplps-server@ttyACM0.service
 sudo systemctl enable naplps-server@ttyACM0.service
 ```
 
@@ -103,6 +107,20 @@ Check status and logs:
 sudo systemctl status naplps-server@ttyACM0.service
 sudo tail -f /var/log/naplps-server.log
 ```
+
+## Live Demo (Experimental)
+
+We currently have a live demo up you can connect to with your videotex terminal via a variety of methods. It is *flakey* and can break easily. More work will be done to see about how (if) we can improve this.
+
+* PSTN (US only for now) - `267-921-1337`
+* PhreakNet - `215-0502`
+* Direct SIP
+  - Server: `sip.dialup.world:`
+  - Port: `16556`
+  - User: `naplps`
+  - Password: `naplps`
+  - Codecs: `G.711/ulaw` ONLY
+  - Number: any
 
 ## Adding/Removing Images
 
