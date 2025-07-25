@@ -12,7 +12,7 @@ The server is written in python, so it should be fairly portable, but it has onl
 
 The server will need a standard Hayes-compatible dial-up modem. This has been tested with an inexpensive USB modem with a Conexant chipset, commonly branded for Dell or Lenovo. Other modems should work just fine.
 
-Between the terminal and the modem, there needs to be something acting as a telephone network. Decades ago this would have been the PSTN, but it should work just fine with a more modern colution. Testing was done eith a Viking line simulator but more testing will be done with SIP devices.
+Between the terminal and the modem, there needs to be something acting as a telephone network. Decades ago this would have been the PSTN, but it should work just fine with a more modern colution. Testing was done with a Viking line simulator but more testing will be done with SIP devices.
 
 ## Software Setup
 
@@ -124,7 +124,7 @@ We currently have a live demo up you can connect to with your videotex terminal 
 
 ## Adding/Removing Images
 
-Images added to the `images` directory will be randomly sent to the terminal. Current logic does not allow the same image to be sent twice in a row, so you should get a different image eith every push. Images added to the directory will not enter the rotation until after the server is restarted. It is not recommended to remove images from the directory while the server is running.
+Images added to the `images` directory will be randomly sent to the terminal. Current logic does not allow the same image to be sent twice in a row, so you should get a different image with every push. Images added to the directory will not enter the rotation until after the server is restarted. It is not recommended to remove images from the directory while the server is running.
 
 Only images ending in the `.nap` (case insensitive) extension will be displayed. Note thet not all NAPLPS images seem to be created equally and some will not render properly.
 
