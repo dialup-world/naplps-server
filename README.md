@@ -53,8 +53,8 @@ At the landing screen (Data Base Access) press `MODE` for the Mode Select screen
 
 | Setting    | Value |
 | -------- | ------- |
-| Name             | <any>      |
-| Contents         | `SHIFT+PHONE`<Number>`SHIFT+DATA` |
+| Name             | *any*      |
+| Contents         | `SHIFT+PHONE`*number*`SHIFT+DATA` |
 | Setup Parameters | yes        |
 | Parity           | None       |
 | Duplex           | Full       |
