@@ -38,8 +38,7 @@ exec su - $USER
 The only software dependency is `python3`, though we do need the `pyserial` package:
 
 ```
-sudo apt-get install python3
-sudo pip3 install pyserial
+sudo apt-get install python3 python3-serial
 ```
 
 ## Running the Server
