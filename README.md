@@ -135,3 +135,13 @@ Only images ending in the `.nap` (case insensitive) extension will be displayed.
 The images in this directory currently are sample images that should work out-of-the-box.
 
 Attribution for the images can be found in the [images/README.md](images/README.md).
+
+## Further Reading
+
+A lot of other people have been working on interesting things in this space and I'd like to highlight a few
+
+* [Remember Tomorrow: A Telidon Story](https://www.remembertomorrow.ca/en-ca) - John Durno has been working on preserving/reviving NAPLPS/Telidon work for the last decade and this project showcases some fantastic artwork and artists from this forgotten medium.
+* [Interactive NAPLPS (Telidon 709) Graphics on a Modern Computer: Technical Note](https://dspace.library.uvic.ca/items/599ee778-0bac-452e-9624-b5c04832a0d7) - This technical note and accompanying demo describes a method for [re] creating interactive presentations of NAPLPS graphics on modern (as of 2017) computing hardware. (John Durno)
+* [NAPLPS: Videotex/Teletext Presentation Level Protocol Syntax](https://archive.org/details/naplps-CSA-T500-1983) - The NAPLPS specification. 
+* [The glorious futility of generating NAPLPS in 2023](https://scruss.com/blog/2023/09/18/the-glorious-futility-of-generating-naplps-in-2023/) - Some "recent" research done in working with NAPLPS graphics in 2023.
+* [Vintage Bell Alextel computer terminal can display graphics!](https://www.youtube.com/watch?v=0BKRfM5HHSM) - Video from vintagecomputer.ca that helped me determine at a high level how to send data to a NAPLPS terminal.
