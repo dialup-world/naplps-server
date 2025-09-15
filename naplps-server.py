@@ -131,7 +131,7 @@ def get_random_nap_file():
     return os.path.join(NAPLPS_DIR, chosen)
 
 def send_naplps_loop(ser):
-    logging.info("Starting NAPLPS send loop with 10ms/char delay.")
+    logging.info("Starting NAPLPS send loop with 20ms/char delay.")
     while running:
         nap_file = get_random_nap_file()
         if not nap_file:
@@ -147,7 +147,7 @@ def send_naplps_loop(ser):
                 if not running:
                     return
                 ser.write(bytes([byte]))
-                time.sleep(0.01)  # 10ms per byte
+                time.sleep(0.02)  # 20ms per byte
 
             logging.info(f"NAPLPS file sent. Sleeping for {LOOP_DELAY} seconds and monitoring for input...")
 
