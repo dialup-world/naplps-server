@@ -136,6 +136,10 @@ The images in this directory currently are sample images that should work out-of
 
 Attribution for the images can be found in the [images/README.md](images/README.md).
 
+## TO-DO
+
+* Play around with parity/error-correcting. It seems the terminal was aware of errora if set to use a parity bit, but I didnt see it attempt a retry.
+
 ## Further Reading
 
 A lot of other people have been working on interesting things in this space and I'd like to highlight a few
